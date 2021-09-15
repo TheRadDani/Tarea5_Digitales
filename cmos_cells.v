@@ -28,7 +28,7 @@ output reg Q;
 always @(posedge C)
 	#4.9 Q <= D;
 endmodule
-#https://www.digikey.com/en/products/detail/nxp-usa-inc/74AHC1G79GW-Q100125/12118573
+//https://www.digikey.com/en/products/detail/nxp-usa-inc/74AHC1G79GW-Q100125/12118573
 //no usado
 module DFFSR(C, D, Q, S, R);
 input C, D, S, R;
