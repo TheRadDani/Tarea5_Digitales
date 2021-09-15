@@ -8,7 +8,7 @@ t3:
 t4:
 	vvp Bin1
 t5:
-	gtkwave test_mux2.vcd
+	gtkwave test_2.vcd
 t6:
 	yosys -p "read_verilog mux_conductual.v" -p "hierarchy -check -top mux_conductual" -p " proc; opt; fsm; opt; memory; opt" -p "techmap; opt" -p "dfflibmap -liberty cmos_cells.lib" -p "abc -liberty cmos_cells.lib" -p "show" -p "clean" -p "write_verilog synth.v"
 t7:
