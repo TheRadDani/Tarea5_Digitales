@@ -29,15 +29,15 @@ always @(posedge C)
 	#4.9 Q <= D;
 endmodule
 #https://www.digikey.com/en/products/detail/nxp-usa-inc/74AHC1G79GW-Q100125/12118573
-/*
+//no usado
 module DFFSR(C, D, Q, S, R);
 input C, D, S, R;
 output reg Q;
-always @(posedge C, posedge S, posedge R)     no usado
+always @(posedge C, posedge S, posedge R)     
 	if (S)
 		Q <= 1'b1;
 	else if (R)
 		Q <= 1'b0;
 	else
-		Q <= D;*/
+		Q <= D;
 endmodule

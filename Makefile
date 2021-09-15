@@ -4,7 +4,7 @@ t1:
 t2:
 	sed -i 's/mux_conductual/synth/' synth.v
 t3:
-	iverilog -o Bin1 Banco_Pruebas2.v
+	iverilog -o Bin1 Banco_Pruebas_2.v
 t4:
 	vvp Bin1
 t5:
@@ -14,7 +14,7 @@ t6:
 t7:
 	sed -i 's/mux_conductual/synth/' synth.v
 t8:
-	iverilog -o Bin2 Banco_Pruebas2.v cmos_cells.v
+	iverilog -o Bin2 Banco_Pruebas_2.v cmos_cells.v
 t9:
 	vvp Bin2
 10:
