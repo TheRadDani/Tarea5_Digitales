@@ -1,5 +1,5 @@
 $date
-	Tue Sep 14 18:14:42 2021
+	Tue Sep 14 18:30:42 2021
 $end
 $version
 	Icarus Verilog
@@ -7,225 +7,275 @@ $end
 $timescale
 	100ps
 $end
+$scope module BUF $end
+$var wire 1 ! A $end
+$var wire 1 " Y $end
+$upscope $end
 $scope module Banco_Pruebas_2 $end
-$var wire 1 ! selector $end
-$var wire 1 " reset_L $end
-$var wire 2 # data_out_synth [1:0] $end
-$var wire 2 $ data_out_c [1:0] $end
-$var wire 2 % data_in1 [1:0] $end
-$var wire 2 & data_in0 [1:0] $end
-$var wire 6 ' contador_c [5:0] $end
-$var wire 1 ( clk $end
+$var wire 1 # selector $end
+$var wire 1 $ reset_L $end
+$var wire 2 % data_out_synth [1:0] $end
+$var wire 2 & data_out_c [1:0] $end
+$var wire 2 ' data_in1 [1:0] $end
+$var wire 2 ( data_in0 [1:0] $end
+$var wire 6 ) contador_c [5:0] $end
+$var wire 1 * clk $end
 $scope module mux_c $end
-$var wire 1 ! selector $end
-$var wire 1 " reset_L $end
-$var wire 2 ) data_in1 [1:0] $end
-$var wire 2 * data_in0 [1:0] $end
-$var wire 1 ( clk $end
-$var reg 2 + data_out_c [1:0] $end
-$var reg 2 , x [1:0] $end
+$var wire 1 # selector $end
+$var wire 1 $ reset_L $end
+$var wire 2 + data_in1 [1:0] $end
+$var wire 2 , data_in0 [1:0] $end
+$var wire 1 * clk $end
+$var reg 2 - data_out_c [1:0] $end
+$var reg 2 . x [1:0] $end
 $upscope $end
 $scope module sth $end
-$var wire 2 - x [1:0] $end
-$var wire 1 ! selector $end
-$var wire 1 " reset_L $end
-$var wire 2 . data_in1 [1:0] $end
-$var wire 2 / data_in0 [1:0] $end
-$var wire 1 ( clk $end
-$var wire 2 0 _0_ [1:0] $end
-$var reg 2 1 data_out_c [1:0] $end
+$var wire 2 / x [1:0] $end
+$var wire 1 # selector $end
+$var wire 1 $ reset_L $end
+$var wire 2 0 data_in1 [1:0] $end
+$var wire 2 1 data_in0 [1:0] $end
+$var wire 1 * clk $end
+$var wire 2 2 _0_ [1:0] $end
+$var reg 2 3 data_out_c [1:0] $end
 $upscope $end
 $scope module tb2 $end
-$var wire 2 2 data_out_c [0:1] $end
-$var wire 2 3 data_out_synth [0:1] $end
-$var reg 1 ( clk $end
-$var reg 6 4 contador_c [5:0] $end
-$var reg 2 5 data_in0 [0:1] $end
-$var reg 2 6 data_in1 [0:1] $end
-$var reg 1 " reset_L $end
-$var reg 1 ! selector $end
+$var wire 2 4 data_out_c [0:1] $end
+$var wire 2 5 data_out_synth [0:1] $end
+$var reg 1 * clk $end
+$var reg 6 6 contador_c [5:0] $end
+$var reg 2 7 data_in0 [0:1] $end
+$var reg 2 8 data_in1 [0:1] $end
+$var reg 1 $ reset_L $end
+$var reg 1 # selector $end
 $upscope $end
+$upscope $end
+$scope module DFF $end
+$var wire 1 9 C $end
+$var wire 1 : D $end
+$var reg 1 ; Q $end
+$upscope $end
+$scope module DFFSR $end
+$var wire 1 < C $end
+$var wire 1 = D $end
+$var wire 1 > R $end
+$var wire 1 ? S $end
+$var reg 1 @ Q $end
+$upscope $end
+$scope module NAND $end
+$var wire 1 A A $end
+$var wire 1 B B $end
+$var wire 1 C Y $end
+$upscope $end
+$scope module NOR $end
+$var wire 1 D A $end
+$var wire 1 E B $end
+$var wire 1 F Y $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 G A $end
+$var wire 1 H Y $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+xH
+zG
+xF
+zE
+zD
+xC
+zB
+zA
+x@
+z?
+z>
+z=
+z<
+x;
+z:
+z9
+b0 8
+b0 7
 b0 6
-b0 5
-b0 4
+bx 5
+bx 4
 bx 3
-bx 2
-bx 1
+b0 2
+b0 1
 b0 0
 b0 /
 b0 .
-b0 -
+bx -
 b0 ,
-bx +
-b0 *
+b0 +
+0*
 b0 )
-0(
+b0 (
 b0 '
-b0 &
-b0 %
-bx $
-bx #
-0"
-0!
+bx &
+bx %
+0$
+0#
+x"
+z!
 $end
+#60
+z"
 #100
-b11 0
-b11 -
-b11 ,
-b0 $
-b0 +
-b0 2
-b0 #
-b0 1
-b0 3
-b11 %
-b11 )
-b11 .
-b11 6
-b10 &
-b10 *
-b10 /
-b10 5
-1!
-1"
-1(
-#200
-0(
-#300
-b1 '
-b1 4
-b0 &
-b0 *
-b0 /
-b0 5
-b11 #
-b11 1
-b11 3
-b11 $
-b11 +
 b11 2
-1(
-#400
-0(
-#500
-b0 0
-b0 -
-b0 ,
-b0 %
-b0 )
-b0 .
-b0 6
-b1 &
-b1 *
-b1 /
-b1 5
-1(
-#600
-0(
-#700
-0!
-b10 %
-b10 )
-b10 .
-b10 6
-b0 &
-b0 *
-b0 /
-b0 5
-b0 #
-b0 1
-b0 3
-b0 $
-b0 +
-b0 2
-1(
-#800
-0(
-#900
-b1 0
-b1 -
-b1 ,
-b11 %
-b11 )
+b11 /
 b11 .
-b11 6
-b1 &
-b1 *
-b1 /
-b1 5
-1(
-#1000
-0(
-#1100
-b10 '
-b10 4
-1!
-b1 %
-b1 )
-b1 .
-b1 6
-b10 &
-b10 *
-b10 /
-b10 5
-b1 #
-b1 1
-b1 3
-b1 $
-b1 +
-b1 2
-1(
-#1200
-0(
-#1300
-b10 0
-b10 -
-b10 ,
-0!
-b10 %
-b10 )
-b10 .
-b10 6
-1(
-#1400
-0(
-#1500
-1!
-b10 #
-b10 1
-b10 3
-b10 $
-b10 +
-b10 2
-1(
-#1600
-0(
-#1700
-b1 0
-b1 -
-b1 ,
-b1 %
-b1 )
-b1 .
-b1 6
-b1 &
-b1 *
-b1 /
-b1 5
-1(
-#1800
-0(
-#1900
+b0 &
+b0 -
+b0 4
+b0 %
+b0 3
+b0 5
 b11 '
+b11 +
+b11 0
+b11 8
+b10 (
+b10 ,
+b10 1
+b10 7
+1#
+1$
+1*
+#200
+0*
+#300
+b1 )
+b1 6
+b0 (
+b0 ,
+b0 1
+b0 7
+b11 %
+b11 3
+b11 5
+b11 &
+b11 -
 b11 4
-b1 #
+1*
+#400
+0*
+#500
+b0 2
+b0 /
+b0 .
+b0 '
+b0 +
+b0 0
+b0 8
+b1 (
+b1 ,
 b1 1
-b1 3
-b1 $
-b1 +
+b1 7
+1*
+#600
+0*
+#700
+0#
+b10 '
+b10 +
+b10 0
+b10 8
+b0 (
+b0 ,
+b0 1
+b0 7
+b0 %
+b0 3
+b0 5
+b0 &
+b0 -
+b0 4
+1*
+#800
+0*
+#900
 b1 2
-1(
+b1 /
+b1 .
+b11 '
+b11 +
+b11 0
+b11 8
+b1 (
+b1 ,
+b1 1
+b1 7
+1*
+#1000
+0*
+#1100
+b10 )
+b10 6
+1#
+b1 '
+b1 +
+b1 0
+b1 8
+b10 (
+b10 ,
+b10 1
+b10 7
+b1 %
+b1 3
+b1 5
+b1 &
+b1 -
+b1 4
+1*
+#1200
+0*
+#1300
+b10 2
+b10 /
+b10 .
+0#
+b10 '
+b10 +
+b10 0
+b10 8
+1*
+#1400
+0*
+#1500
+1#
+b10 %
+b10 3
+b10 5
+b10 &
+b10 -
+b10 4
+1*
+#1600
+0*
+#1700
+b1 2
+b1 /
+b1 .
+b1 '
+b1 +
+b1 0
+b1 8
+b1 (
+b1 ,
+b1 1
+b1 7
+1*
+#1800
+0*
+#1900
+b11 )
+b11 6
+b1 %
+b1 3
+b1 5
+b1 &
+b1 -
+b1 4
+1*
