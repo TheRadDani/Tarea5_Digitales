@@ -4,7 +4,6 @@ module probador(
                     output reg selector,
                     output reg [0:1] data_in0,
                     output reg [0:1] data_in1,
-                    output reg [5:0] contador_c,
                     input [0:1] data_out_c,
                     input [0:1] data_out_synth_rtl,
                     input [0:1] data_out_synth_c);    
@@ -68,24 +67,7 @@ initial begin
     data_in1 <= 2'b01;
     $finish;			// Termina de almacenar se�ales
 end
-<<<<<<< HEAD:probador.v
-=======
-//contador
-always @(posedge data_out_c)begin
-    if(reset_L==0) 
-        contador_c<=0;
-    else
-        contador_c <= contador_c + 1;
-end
-/*
-always @(posedge data_out_synth)begin
-    if(reset_L==0) 
-        data_out_synth<=0;
-    else
-        data_out_synth <= data_out_synth + 1;
-end
-*/
->>>>>>> 4935e192969f1e944a67902386ec34ccadde7382:test_bench_2.v
+
 //checker
 /*
 always @(posedge clk)begin
@@ -93,7 +75,7 @@ always @(posedge clk)begin
         $display("Se detecta diferencia en salida entre modulo estructural y conductual");
     end
      */   
-end
+
     // Reloj
 	initial	clk 	<= 0;			// Valor inicial al relo
 	always	#10 clk 	<= ~clk;		//invertido cada 10*10ns
