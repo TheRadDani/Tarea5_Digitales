@@ -4,7 +4,6 @@ module probador(
                     output reg selector,
                     output reg [0:1] data_in0,
                     output reg [0:1] data_in1,
-                    output reg [5:0] contador_c,
                     input [0:1] data_out_c,
                     input [0:1] data_out_synth);    
 initial begin
