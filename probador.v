@@ -12,12 +12,11 @@ initial begin
     // Mensaje que se imprime en consola una vez
     $display ("\tclk,\tdata_in0,\tdata_in1,\tselector,\treset_L,\tdata_out_c,\tdata_synth,\tcontador_c"); 
     // Mensaje que se imprime en consola cada vez que un elemento de la lista cambia 
-    $monitor($time,"\t%b\t%b\t%b\t%b\t%b\t%b\t%b",data_in0,data_in1,selector,reset_L,data_out_c,data_out_synth,contador_c); 
+    $monitor($time,"\t%b\t%b\t%b\t%b\t%b\t%b",data_in0,data_in1,selector,reset_L,data_out_c,data_out_synth); 
     data_in0 = 2'b00; //valor inicial de datos de entradas
     data_in1 = 2'b00; //valor inicial de datos de entradas
     reset_L = 1'b0;    //valor por defecto de entrada selector
     selector = 1'b0; //asignacion bloqueante asincronica
-    contador_c = 5'b00000;
     @(posedge clk);
     reset_L<=1;
     selector<=~selector;
@@ -66,7 +65,7 @@ initial begin
     $finish;			// Termina de almacenar se�ales
 end
 
-*/
+
 //checker
 
 always @(posedge clk)begin
@@ -76,6 +75,6 @@ always @(posedge clk)begin
 end
     // Reloj
 	initial	clk 	<= 0;			// Valor inicial al relo
-	always	#10 clk 	<= ~clk;		//invertido cada 10*10ns
+	always	#13.8 clk 	<= ~clk;		//invertido cada 10*10ns
 endmodule
-//minimo de sim 4.9
+//minimo de sim 13.8

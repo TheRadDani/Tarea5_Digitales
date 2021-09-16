@@ -1,4 +1,4 @@
-all: t1 t2 t4 t5 t6 t7 t8 t9 10
+all: t1 t2 t3 t4 t5 t6 t7 t8 t9 t10
 t1:
 	yosys -p "read_verilog mux_conductual.v" -p "hierarchy -check -top mux_conductual" -p " proc; opt; fsm; opt; memory; opt" -p "techmap; opt" -p "show" -p "write_verilog synth.v"
 t2:
@@ -17,7 +17,7 @@ t8:
 	iverilog -o Bin2 Banco_Pruebas_2.v cmos_cells.v
 t9:
 	vvp Bin2
-10:
+t10:
 	gtkwave test_2.vcd
 clean:
 	rm -r *.vcd .*o *.out Bin1 Bin2 synth.v
