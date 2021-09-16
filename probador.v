@@ -6,9 +6,7 @@ module probador(
                     output reg [0:1] data_in1,
                     output reg [5:0] contador_c,
                     input [0:1] data_out_c,
-                    input [0:1] data_out_synth_rtl,
-                    input [0:1] data_out_synth_c);    
-
+                    input [0:1] data_out_synth);    
 initial begin
     $dumpfile("test_2.vcd");	// Nombre de .vcd a graficar
 	$dumpvars;
@@ -68,31 +66,14 @@ initial begin
     data_in1 <= 2'b01;
     $finish;			// Termina de almacenar se�ales
 end
-<<<<<<< HEAD:probador.v
-=======
-//contador
-always @(posedge data_out_c)begin
-    if(reset_L==0) 
-        contador_c<=0;
-    else
-        contador_c <= contador_c + 1;
-end
-/*
-always @(posedge data_out_synth)begin
-    if(reset_L==0) 
-        data_out_synth<=0;
-    else
-        data_out_synth <= data_out_synth + 1;
-end
+
 */
->>>>>>> 4935e192969f1e944a67902386ec34ccadde7382:test_bench_2.v
 //checker
-/*
+
 always @(posedge clk)begin
     if(data_out_c != data_out_synth)begin
-        $display("Se detecta diferencia en salida entre modulo estructural y conductual");
+        $display("Se detecta diferencia en salida entre modulo conductural y la salida del sintetizado con tecnologia");
     end
-     */   
 end
     // Reloj
 	initial	clk 	<= 0;			// Valor inicial al relo
