@@ -75,6 +75,6 @@ always @(posedge clk)begin
 end
     // Reloj
 	initial	clk 	<= 0;			// Valor inicial al relo
-	always	#13.8 clk 	<= ~clk;		//invertido cada 10*10ns
+	always	#13.9 clk 	<= ~clk;		//invertido cada 13.9*10ns
 endmodule
-//minimo de sim 13.8
+//minimo de sim 13.9
