@@ -7,7 +7,7 @@ endmodule
 module NOT(A, Y);
 input A;
 output Y;
-assign #(6:6:6,6:6:6) Y = ~A;
+assign #(6:6:9,6:6:6) Y = ~A;
 endmodule
 //https://www.digikey.com/en/products/detail/advanced-micro-devices/AM2965PC/12120948
 module NAND(A, B, Y);
